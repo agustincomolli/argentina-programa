@@ -1,0 +1,6 @@
+/* Resetear estilos del navegador */
+@import "reset.css";
+/* importar variables */
+@import "variables.css";
+/* Estilos de la barra de navegación */
+@import "navbar.css";
