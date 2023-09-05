@@ -4,3 +4,5 @@
 @import "variables.css";
 /* Estilos de la barra de navegación */
 @import "navbar.css";
+/* Estilos para el hero */
+@import "hero.css";

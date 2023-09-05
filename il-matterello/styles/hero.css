@@ -1,0 +1,101 @@
+.hero {
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.plate-wrapper {
+  /* 
+    Para posicionar los elementos, el elemento padre siempre tiene que tener
+    la propiedad position en relative.
+   */
+  position: relative;
+  /* 
+    Para alinear los objetos al centro del contenedor usamos la propiedad display
+    en flex.
+    */
+  display: flex;
+  flex-direction: column;
+  /* Alinear al centro de forma horizontal */
+  justify-content: center;
+  /* Alinear al centro de forma vertical */
+  align-items: center;
+}
+
+.plate {
+  width: 120px;
+  height: auto;
+  padding: 1rem 0;
+}
+
+.plate-circle {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  /* Posición respecto a su elemento padre. */
+  position: absolute;
+  top: 0;
+  /* Envía el elemento al fondo. */
+  z-index: -1;
+  /* Crea un semicírculo. */
+  border-radius: 0 0 50% 50%;
+  /* 
+      Con la propiedad transform y la función translate movemos el
+      semicírculo en el eje Y un 45% hacia arriba por eso es negativo -45%.
+    */
+  transform: translate(0, -45%);
+}
+
+.hero-content {
+  display: flex;
+  /* Disponer los elementos hijos en columna. */
+  flex-direction: column;
+  /* Dejar un espacio entre elementos. */
+  gap: 1.5rem;
+  /* Centrar verticalmente. */
+  justify-content: center;
+  /* Centrar horizontalmente. */
+  align-items: center;
+  width: 100%;
+}
+
+.hero-title {
+  font-size: 3rem;
+  text-align: center;
+  /* 
+  Al poner un ancho máximo de 400 px nos aseguramos que el título ocupe 2 líneas
+  a no ser que el ancho de la pantalla sea menor que eso.
+  */
+  max-width: 400px;
+}
+
+.hero-content>button {
+  background-color: var(--black-color);
+  color: white;
+  padding: 0.75em 1em;
+  border-radius: 20px;
+  /* El ancho se ajusta al contenido. */
+  width: fit-content;
+}
+
+.left-floating {
+  width: 150px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(15deg) translate(-10%, 20%);
+}
+
+.right-floating {
+  width: 120px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-15deg) translate(10%, 30%);
+}
+
+/* .logo-bar {
+  position: absolute;
+  top: 0;
+} */
