@@ -3,8 +3,13 @@
   --black-color: #170102;
 }
 
-body {
+main {
   font-family: "Montserrat", sans-serif;
+  /* 
+    Cuando un objeto sobrepasa el contenedor padre, el contenedor se agranda
+    automáticamente. Para que esto no ocurra usamos:
+  */
+  overflow: hidden;
 }
 
 .text-serif {
