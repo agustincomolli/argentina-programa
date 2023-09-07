@@ -1,0 +1,56 @@
+.footer {
+  display: flex;
+  /* Agrupar los ojetos en columna. */
+  flex-direction: column;
+  /* Centrar en el eje X. */
+  align-items: center;
+  /* Establecer espaciado vertical. */
+  gap: 2rem;
+
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 500;
+
+  margin-top: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.copyright p{
+  padding: 0.25rem 0;
+}
+
+.brand-copy {
+  font-weight: bold;
+}
+
+.footer-circle{
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  bottom: -120px;
+  z-index: -2;
+  background-color: var(--primary-color);
+  border-radius: 50% 50% 0 0;
+}
+
+.footer-floating {
+  position: absolute;
+  width: 140px;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  transform: translate(-30%, 30%);
+  z-index: -1;
+}

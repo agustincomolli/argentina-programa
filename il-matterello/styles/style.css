@@ -8,3 +8,5 @@
 @import "hero.css";
 /* Estilos para los features */
 @import "features.css";
+/* Estilos para el footer */
+@import "footer.css"
