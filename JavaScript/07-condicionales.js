@@ -11,3 +11,27 @@ if (is_registered) {
 } else {
     console.log("Gracias por su tiempo 👋");
 }
+
+// switch case
+
+let fruit;  // manzana, pera, ciruela, durazno
+
+fruit = "manzana";
+
+switch (fruit) {
+    case "manzana":
+        console.log("Agrupando manzanas")
+        break;
+    case "pera":
+        console.log("Agrupando peras")
+        break;
+    case "ciruela":
+        console.log("Agrupando ciruelas")
+        break;
+    case "durazno":
+        console.log("Agrupando duraznos")
+        break;
+    default:
+        console.log("Fruta desconocida")
+        break;
+};
