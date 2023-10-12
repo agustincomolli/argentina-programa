@@ -13,9 +13,35 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-  <h2 class="h2">JQuery</h2>
+  <h1 class="h1">JQuery</h1>
+  <label for="language">Seleccione su idioma: </label>
+  <select name="language" id="language">
+    <option value="en">English</option>
+    <option value="es" selected>Español</option>
+  </select>
   <div class="container py-4 text-center">
     <button id="btn-clickme" class="btn btn-primary">¡Hazme clic!</button>
+  </div>
+  <p id="hided-paragraph" style="display: none;">Párrafo oculto</p>
+  <div class="container">
+    <div class="comments row gap-4">
+      <div class="comment container row-cols-2 row border py-2">
+        <p>Hola genial</p>
+        <button class="btn btn-danger">Eliminar</button>
+      </div>
+      <div class="comment container row-cols-2 row border py-2">
+        <p>Genial</p>
+        <button class="btn btn-danger">Eliminar</button>
+      </div>
+      <div class="comment container row-cols-2 row border py-2">
+        <p>No me agrada</p>
+        <button class="btn btn-danger">Eliminar</button>
+      </div>
+      <div class="comment container row-cols-2 row border py-2">
+        <p>Increíble</p>
+        <button class="btn btn-danger">Eliminar</button>
+      </div>
+    </div>
   </div>
 
   <!-- JavaScript para Bootstrap -->
