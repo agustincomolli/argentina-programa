@@ -24,7 +24,11 @@ $(document).ready(() => {
         const btnDelete = $(comments[index]).find("button");
         btnDelete.on("click", function() {
             const parent = $(this).closest(".comment");
-            parent.remove();
+            parent.css("position", "relative");
+            parent.animate({
+                opacity: 0,
+                left: "-=100px"
+            }, 1000, () => {parent.remove()});
         });
     });
 });
